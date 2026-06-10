@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shivani Weds Kishore | 25th June 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <style>
+
+    :root {
+      --saffron:        #d4720a;
+      --saffron-light:  #f0a030;
+      --marigold:       #e8b830;
+      --marigold-light: #f8d878;
+      --marigold-pale:  #fef3c7;
+      --temple-red:     #7a1515;
+      --temple-dark:    #2e0d0d;
+      --temple-brown:   #4a2008;
+      --temple-mid:     #6b3010;
+      --cream:          #fdf6e8;
+      --parchment:      #f7e8cc;
+      --parchment-dark: #edd9a3;
+      --mango-green:    #3d6b32;
+      --mango-mid:      #4e8a40;
+      --mango-light:    #6aad58;
+      --text-dark:      #1e0e06;
+      --text-mid:       #5a3018;
+      --text-light:     #8a5530;
+      --white:          #ffffff;
+      --kumkum:         #b02020;
+      --gold-shine:     #c8960c;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: var(--cream);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ── UTILITY ── */
+    .marigold-border {
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg,
+        var(--temple-dark),
+        var(--temple-red) 15%,
+        var(--marigold) 35%,
+        var(--saffron-light) 50%,
+        var(--marigold) 65%,
+        var(--temple-red) 85%,
+        var(--temple-dark)
+      );
+    }
+
+    .section-inner { max-width: 1080px; margin: 0 auto; }
+
+    .section-title { text-align: center; margin-bottom: 3.5rem; }
+
+    .section-title h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 600;
+      color: var(--temple-dark);
+      letter-spacing: 0.04em;
+    }
+
+    .temple-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 0.9rem 0 0.7rem;
+    }
+
+    .temple-divider .line {
+      flex: 1;
+      max-width: 140px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--marigold), transparent);
+    }
+
+    .temple-divider .ornament {
+      color: var(--saffron);
+      font-size: 1rem;
+      letter-spacing: 0.3em;
+    }
+
+    .section-title p {
+      color: var(--text-light);
+      font-size: 1rem;
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── NAVIGATION ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(22, 6, 6, 0.97);
+      border-bottom: 2px solid var(--marigold);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1.5rem;
+      height: 54px;
+      flex-wrap: wrap;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: rgba(248, 216, 120, 0.85);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0.3rem 0.7rem;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 50%; right: 50%;
+      height: 1px;
+      background: var(--marigold);
+      transition: left 0.3s, right 0.3s;
+    }
+
+    nav a:hover { color: var(--white); }
+    nav a:hover::after { left: 0.7rem; right: 0.7rem; }
+
+    .nav-sep {
+      color: rgba(232, 184, 48, 0.3);
+      font-size: 0.6rem;
+      padding: 0 0.1rem;
+    }
+
+    /* ── TORANA WRAP ── */
+    .torana-wrap {
+      position: absolute;
+      top: 54px;
+      left: 0; right: 0;
+      z-index: 8;
+      pointer-events: none;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .torana-wrap svg {
+      display: block;
+      width: 100%;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10rem 2rem 5rem;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(232,184,48,0.14) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 15% 90%,  rgba(122,21,21,0.3)   0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 85% 90%,  rgba(122,21,21,0.3)   0%, transparent 60%),
+        linear-gradient(175deg, #160404 0%, #2e0d0d 30%, #4a1a06 65%, #6b2c0a 100%);
+    }
+
+    .hero-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(232,184,48,0.1);
+      pointer-events: none;
+    }
+
+    .hero-ring-1 { width: 500px; height: 500px; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+    .hero-ring-2 { width: 700px; height: 700px; top: 50%; left: 50%; transform: translate(-50%,-50%); border-color: rgba(232,184,48,0.06); }
+    .hero-ring-3 { width: 900px; height: 900px; top: 50%; left: 50%; transform: translate(-50%,-50%); border-color: rgba(232,184,48,0.04); }
+
+    .petal {
+      position: absolute;
+      animation: floatPetal linear infinite;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 1;
+      font-size: 1rem;
+    }
+
+    @keyframes floatPetal {
+      0%   { transform: translateY(-20px) rotate(0deg) scale(0.8);   opacity: 0; }
+      8%   { opacity: 0.7; }
+      92%  { opacity: 0.4; }
+      100% { transform: translateY(105vh) rotate(400deg) scale(1.1); opacity: 0; }
+    }
+
+    .hero-om {
+      font-size: 2.6rem;
+      color: var(--marigold);
+      position: relative;
+      z-index: 2;
+      margin-bottom: 1.2rem;
+      animation: glowPulse 4s ease-in-out infinite;
+      filter: drop-shadow(0 0 12px rgba(232,184,48,0.5));
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { filter: drop-shadow(0 0 10px rgba(232,184,48,0.4)); }
+      50%       { filter: drop-shadow(0 0 28px rgba(232,184,48,0.8)); }
+    }
+
+    .hero-names-block {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+    }
+
+    .corner-ornament {
+      position: absolute;
+      width: 40px; height: 40px;
+      border-color: rgba(232,184,48,0.5);
+      border-style: solid;
+    }
+
+    .corner-ornament.tl { top: -8px; left: -8px; border-width: 2px 0 0 2px; }
+    .corner-ornament.tr { top: -8px; right: -8px; border-width: 2px 2px 0 0; }
+    .corner-ornament.bl { bottom: -8px; left: -8px; border-width: 0 0 2px 2px; }
+    .corner-ornament.br { bottom: -8px; right: -8px; border-width: 0 2px 2px 0; }
+
+    .hero-names-inner { padding: 2rem 3.5rem; }
+
+    .hero-bride-name,
+    .hero-groom-name {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: clamp(3.5rem, 10vw, 7rem);
+      color: var(--marigold-light);
+      line-height: 1;
+      letter-spacing: 0.02em;
+      text-shadow:
+        0 2px 8px rgba(0,0,0,0.6),
+        0 0 40px rgba(232,184,48,0.2);
+    }
+
+    .hero-weds {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(1.4rem, 4vw, 2.4rem);
+      color: var(--saffron-light);
+      letter-spacing: 0.25em;
+      margin: 0.4rem 0;
+      opacity: 0.9;
+    }
+
+    .hero-date-line {
+      position: relative;
+      z-index: 2;
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .hero-date-line .date-rule {
+      width: 60px; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(232,184,48,0.6));
+    }
+
+    .hero-date-line .date-rule.right {
+      background: linear-gradient(90deg, rgba(232,184,48,0.6), transparent);
+    }
+
+    .hero-date-text {
+      font-family: 'EB Garamond', serif;
+      font-size: 1rem;
+      color: rgba(248,216,120,0.8);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+    }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      color: rgba(255,255,255,0.25);
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      animation: bounceHint 3s ease-in-out infinite;
+    }
+
+    .scroll-hint svg {
+      width: 16px; height: 16px;
+      stroke: rgba(232,184,48,0.3);
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    @keyframes bounceHint {
+      0%, 100% { transform: translateX(-50%) translateY(0);   opacity: 0.6; }
+      50%       { transform: translateX(-50%) translateY(10px); opacity: 1; }
+    }
+
+    /* ── EVENTS ── */
+    #events {
+      padding: 5rem 1.5rem;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(232,184,48,0.05) 0%, transparent 60%),
+        var(--parchment);
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.6rem;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .event-card {
+      background: var(--white);
+      border-radius: 2px;
+      overflow: hidden;
+      box-shadow:
+        0 2px 8px rgba(44,16,4,0.08),
+        0 8px 32px rgba(44,16,4,0.06);
+      border: 1px solid rgba(212,114,10,0.15);
+      transition: transform 0.35s cubic-bezier(0.25,0.8,0.25,1), box-shadow 0.35s;
+      position: relative;
+    }
+
+    .event-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--temple-red), var(--marigold), var(--temple-red));
+    }
+
+    .event-card:hover {
+      transform: translateY(-8px);
+      box-shadow:
+        0 4px 16px rgba(44,16,4,0.12),
+        0 20px 48px rgba(44,16,4,0.12);
+    }
+
+    .event-card-header {
+      background: linear-gradient(150deg, var(--temple-dark) 0%, var(--temple-brown) 100%);
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .event-card-header::after {
+      content: '';
+      position: absolute;
+      bottom: -1px; left: 0; right: 0;
+      height: 20px;
+      background: var(--white);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+
+    .event-icon { font-size: 2rem; display: block; margin-bottom: 0.7rem; position: relative; z-index: 1; }
+
+    .event-card-header h3 {
+      color: var(--marigold-light);
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      position: relative; z-index: 1;
+    }
+
+    .event-card-header .event-date {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.75rem;
+      margin-top: 0.4rem;
+      letter-spacing: 0.12em;
+      font-family: 'Lato', sans-serif;
+      position: relative; z-index: 1;
+    }
+
+    .event-card-body { padding: 1.6rem 1.4rem 1.4rem; }
+
+    .event-card-body p {
+      font-size: 0.88rem;
+      color: var(--text-mid);
+      line-height: 1.75;
+      margin-bottom: 1.2rem;
+    }
+
+    .event-card-body p strong {
+      color: var(--temple-dark);
+      font-size: 0.95rem;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .map-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: var(--saffron);
+      border: 1.5px solid var(--saffron);
+      padding: 0.5rem 1.1rem;
+      border-radius: 2px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: all 0.25s;
+    }
+
+    .map-btn:hover {
+      background: var(--saffron);
+      color: var(--white);
+      box-shadow: 0 4px 16px rgba(212,114,10,0.3);
+    }
+
+    /* ── ITINERARY ── */
+    #itinerary {
+      padding: 5rem 1.5rem;
+      background: var(--cream);
+    }
+
+    .itinerary-tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .tab-btn {
+      background: var(--white);
+      border: 1.5px solid rgba(212,114,10,0.25);
+      color: var(--text-light);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.6rem 1.4rem;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.25s;
+      letter-spacing: 0.04em;
+    }
+
+    .tab-btn:hover { border-color: var(--saffron); color: var(--saffron); }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, var(--temple-dark), var(--temple-brown));
+      border-color: transparent;
+      color: var(--marigold-light);
+      box-shadow: 0 4px 20px rgba(44,16,4,0.2);
+    }
+
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; animation: fadeIn 0.35s ease; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .itinerary-day-label { text-align: center; margin-bottom: 2.5rem; }
+
+    .day-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      background: linear-gradient(135deg, var(--temple-dark), var(--temple-mid));
+      color: var(--marigold-light);
+      padding: 0.6rem 2rem;
+      border-radius: 2px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      border: 1px solid rgba(232,184,48,0.2);
+      box-shadow: 0 4px 16px rgba(44,16,4,0.15);
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 740px;
+      margin: 0 auto;
+      padding-left: 2.5rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 8px; bottom: 8px;
+      width: 2px;
+      background: linear-gradient(180deg,
+        var(--marigold) 0%,
+        var(--saffron) 30%,
+        var(--temple-red) 70%,
+        var(--marigold) 100%
+      );
+      border-radius: 2px;
+    }
+
+    .timeline-item {
+      position: relative;
+      display: flex;
+      gap: 1.4rem;
+      margin-bottom: 1.2rem;
+      align-items: flex-start;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -2.1rem;
+      top: 0.9rem;
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--parchment);
+      border: 2px solid var(--marigold);
+      box-shadow: 0 0 0 3px rgba(232,184,48,0.15);
+      z-index: 1;
+    }
+
+    .timeline-dot.muhurtham {
+      background: var(--kumkum);
+      border-color: var(--kumkum);
+      width: 18px; height: 18px;
+      left: -2.25rem; top: 0.75rem;
+      box-shadow: 0 0 0 4px rgba(176,32,32,0.15), 0 0 16px rgba(176,32,32,0.4);
+      animation: muhurthamPulse 2.5s ease-in-out infinite;
+    }
+
+    @keyframes muhurthamPulse {
+      0%, 100% { box-shadow: 0 0 0 4px rgba(176,32,32,0.15), 0 0 16px rgba(176,32,32,0.35); }
+      50%       { box-shadow: 0 0 0 7px rgba(176,32,32,0.1),  0 0 28px rgba(176,32,32,0.55); }
+    }
+
+    .timeline-time {
+      flex-shrink: 0;
+      min-width: 80px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--saffron);
+      letter-spacing: 0.08em;
+      padding-top: 0.75rem;
+      text-align: right;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .timeline-content {
+      flex: 1;
+      background: var(--white);
+      border: 1px solid rgba(212,114,10,0.12);
+      border-left: 2px solid var(--marigold);
+      border-radius: 2px;
+      padding: 0.75rem 1.1rem;
+      box-shadow: 0 1px 6px rgba(44,16,4,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .timeline-content:hover {
+      transform: translateX(4px);
+      box-shadow: 0 4px 16px rgba(44,16,4,0.1);
+    }
+
+    .timeline-content.muhurtham {
+      background: linear-gradient(135deg, #fff9ee, #fff4dc);
+      border-left-color: var(--kumkum);
+      border-color: rgba(176,32,32,0.18);
+    }
+
+    .timeline-content h4 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--temple-dark);
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .timeline-content.muhurtham h4 { color: var(--kumkum); }
+
+    .timeline-content p {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin-top: 0.25rem;
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+    }
+
+    .muhurtham-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: var(--kumkum);
+      color: var(--white);
+      font-size: 0.58rem;
+      font-weight: 700;
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.18rem 0.55rem;
+      border-radius: 10px;
+    }
+
+    .t-icon { font-size: 0.95rem; flex-shrink: 0; }
+
+    /* ── LIVE STREAM ── */
+    #livestream {
+      padding: 5rem 1.5rem;
+      background: var(--parchment);
+      position: relative;
+    }
+
+    .stream-wrapper { max-width: 860px; margin: 0 auto; text-align: center; }
+
+    .stream-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--kumkum);
+      color: var(--white);
+      padding: 0.4rem 1.2rem;
+      border-radius: 2px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 1.8rem;
+      animation: pulseBadge 2.5s infinite;
+    }
+
+    @keyframes pulseBadge {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.7; }
+    }
+
+    .stream-dot { width: 7px; height: 7px; background: var(--white); border-radius: 50%; }
+
+    .video-frame-outer {
+      padding: 3px;
+      background: linear-gradient(135deg, var(--marigold), var(--saffron), var(--temple-red), var(--saffron), var(--marigold));
+      border-radius: 4px;
+      box-shadow: 0 12px 48px rgba(44,16,4,0.25);
+    }
+
+    .video-frame-inner {
+      background: var(--temple-dark);
+      border-radius: 2px;
+      padding: 0.6rem;
+    }
+
+    .video-frame-inner::before {
+      content: '✦  🌼  ✦  🌼  ✦  🌼  ✦  🌼  ✦  🌼  ✦';
+      display: block;
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--marigold);
+      letter-spacing: 0.3em;
+      padding: 0.35rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .video-frame-inner::after {
+      content: '✦  🌼  ✦  🌼  ✦  🌼  ✦  🌼  ✦  🌼  ✦';
+      display: block;
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--marigold);
+      letter-spacing: 0.3em;
+      padding: 0.35rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 1px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    .stream-note {
+      margin-top: 1.4rem;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+    }
+
+    /* ── PHOTOS ── */
+    #photos {
+      padding: 5rem 1.5rem;
+      background: var(--cream);
+    }
+
+    .photos-wrapper { max-width: 580px; margin: 0 auto; text-align: center; }
+
+    .photos-card {
+      background: var(--white);
+      border-radius: 2px;
+      padding: 3.5rem 2.5rem;
+      box-shadow: 0 2px 8px rgba(44,16,4,0.06), 0 12px 40px rgba(44,16,4,0.08);
+      border: 1px solid rgba(212,114,10,0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .photos-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--temple-red), var(--marigold), var(--saffron), var(--marigold), var(--temple-red));
+    }
+
+    .photos-card .leaf-corner {
+      position: absolute;
+      font-size: 3rem;
+      opacity: 0.06;
+      pointer-events: none;
+    }
+
+    .photos-card .leaf-corner.tl { top: 8px;  left: 8px;  transform: rotate(-30deg); }
+    .photos-card .leaf-corner.tr { top: 8px;  right: 8px; transform: rotate(30deg) scaleX(-1); }
+    .photos-card .leaf-corner.bl { bottom: 8px; left: 8px;  transform: rotate(30deg); }
+    .photos-card .leaf-corner.br { bottom: 8px; right: 8px; transform: rotate(-30deg) scaleX(-1); }
+
+    .photos-icon { font-size: 3rem; margin-bottom: 1.2rem; display: block; }
+
+    .photos-card h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--temple-dark);
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.03em;
+    }
+
+    .photos-card p {
+      color: var(--text-light);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+    }
+
+    .upload-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      background: linear-gradient(135deg, var(--temple-dark) 0%, var(--temple-brown) 100%);
+      color: var(--marigold-light);
+      padding: 0.9rem 2.4rem;
+      border-radius: 2px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      transition: transform 0.25s, box-shadow 0.25s;
+      box-shadow: 0 4px 20px rgba(44,16,4,0.25);
+      border: 1px solid rgba(232,184,48,0.25);
+    }
+
+    .upload-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 32px rgba(44,16,4,0.35);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: linear-gradient(160deg, var(--temple-dark) 0%, #3d1208 50%, var(--temple-dark) 100%);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 4rem 1.5rem 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--temple-dark), var(--marigold), var(--saffron), var(--marigold), var(--temple-dark));
+    }
+
+    .footer-om { font-size: 2.2rem; color: var(--marigold); margin-bottom: 1rem; display: block; filter: drop-shadow(0 0 8px rgba(232,184,48,0.4)); }
+    .footer-names { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 600; color: var(--marigold-light); letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+    .footer-date { font-family: 'EB Garamond', serif; font-style: italic; font-size: 1rem; color: rgba(248,216,120,0.5); letter-spacing: 0.2em; margin-bottom: 1.5rem; }
+    .footer-ornament { color: rgba(232,184,48,0.3); font-size: 0.9rem; letter-spacing: 0.8em; margin-bottom: 1.2rem; display: block; }
+    footer p { font-size: 0.78rem; letter-spacing: 0.08em; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      nav { height: auto; padding: 0.6rem 0.8rem; }
+      nav a { font-size: 0.65rem; padding: 0.25rem 0.5rem; }
+      .nav-sep { display: none; }
+      .hero-names-inner { padding: 1.5rem 2rem; }
+      .timeline { padding-left: 2rem; }
+      .timeline-time { min-width: 65px; font-size: 0.7rem; }
+      .tab-btn { font-size: 0.85rem; padding: 0.5rem 1rem; }
+      .corner-ornament { width: 28px; height: 28px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#hero">Home</a>
+      <span class="nav-sep">◆</span>
+      <a href="#events">Venues</a>
+      <span class="nav-sep">◆</span>
+      <a href="#itinerary">Itinerary</a>
+      <span class="nav-sep">◆</span>
+      <a href="#livestream">Live Stream</a>
+      <span class="nav-sep">◆</span>
+      <a href="#photos">Photos</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+
+    <div class="hero-ring hero-ring-1" aria-hidden="true"></div>
+    <div class="hero-ring hero-ring-2" aria-hidden="true"></div>
+    <div class="hero-ring hero-ring-3" aria-hidden="true"></div>
+    <div id="petals-container" aria-hidden="true"></div>
+
+    <!--
+      ═══════════════════════════════════════════════════════
+      TORANA SVG — FIXED:
+        1. Leaves now hang DOWNWARD from the rope (tips point down)
+        2. Marigold flowers are FULL circles with layered petals
+           all around (360°), not semicircles
+        3. Rope has natural catenary loops/dips between flowers
+      ═══════════════════════════════════════════════════════
+    -->
+    <div class="torana-wrap" aria-hidden="true">
+      <svg viewBox="0 0 1440 160" xmlns="http://www.w3.org/2000/svg"
+           preserveAspectRatio="none" style="height:160px;">
+        <defs>
+          <linearGradient id="ropeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#2e0d0d"/>
+            <stop offset="20%"  stop-color="#7a4010"/>
+            <stop offset="50%"  stop-color="#5c2a0a"/>
+            <stop offset="80%"  stop-color="#7a4010"/>
+            <stop offset="100%" stop-color="#2e0d0d"/>
+          </linearGradient>
+
+          <!-- Leaf: dark face -->
+          <linearGradient id="leafDark" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%"   stop-color="#2d5a27"/>
+            <stop offset="100%" stop-color="#3d6b32"/>
+          </linearGradient>
+          <!-- Leaf: lighter highlight -->
+          <linearGradient id="leafLight" x1="0%" y1="0%" x2="60%" y2="100%">
+            <stop offset="0%"   stop-color="#5aaa48"/>
+            <stop offset="100%" stop-color="#3d7a30"/>
+          </linearGradient>
+
+          <!-- Marigold petals outer ring -->
+          <linearGradient id="petalOuter" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%"   stop-color="#fce87a"/>
+            <stop offset="100%" stop-color="#e8a820"/>
+          </linearGradient>
+          <!-- Marigold petals inner ring -->
+          <linearGradient id="petalInner" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%"   stop-color="#f0b830"/>
+            <stop offset="100%" stop-color="#d07010"/>
+          </linearGradient>
+          <!-- Marigold centre -->
+          <radialGradient id="petalCenter" cx="40%" cy="35%" r="60%">
+            <stop offset="0%"   stop-color="#f08030"/>
+            <stop offset="100%" stop-color="#8b2000"/>
+          </radialGradient>
+
+          <filter id="leafShadow" x="-30%" y="-10%" width="160%" height="130%">
+            <feDropShadow dx="1" dy="3" stdDeviation="2" flood-color="rgba(0,0,0,0.35)"/>
+          </filter>
+          <filter id="flowerShadow" x="-40%" y="-40%" width="180%" height="180%">
+            <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(0,0,0,0.4)"/>
+          </filter>
+        </defs>
+
+        <!--
+          ROPE — catenary that PEAKS at flower positions (x = 0,240,480,720,960,1200,1440)
+          and DIPS between them (x = 120,360,600,840,1080,1320).
+          Rope sits near y=22 at peaks and dips to y=42 between.
+        -->
+        <path
+          d="M0,22
+             C40,22  80,42  120,42
+             C160,42 200,22  240,22
+             C280,22 320,42  360,42
+             C400,42 440,22  480,22
+             C520,22 560,42  600,42
+             C640,42 680,22  720,22
+             C760,22 800,42  840,42
+             C880,42 920,22  960,22
+             C1000,22 1040,42 1080,42
+             C1120,42 1160,22 1200,22
+             C1240,22 1280,42 1320,42
+             C1360,42 1400,22 1440,22"
+          stroke="url(#ropeGrad)"
+          stroke-width="4.5"
+          fill="none"
+          stroke-linecap="round"
+        />
+
+        <!--
+          ═══════════════════════════════════════════
+          MANGO LEAF CLUSTERS — hanging at each DIP
+          (x=120,360,600,840,1080,1320  y=42)
+
+          Each leaf is drawn pointing DOWNWARD:
+          stem at top (y=0), tip at bottom (y=+55).
+          The path goes: start at stem top, curves
+          out to the side, comes to a pointed tip,
+          curves back. Midrib drawn from top to tip.
+          ═══════════════════════════════════════════
+        -->
+
+        <!-- Leaf cluster macro — repeated at each dip x position -->
+        <!-- We define one cluster and repeat via transform -->
+
+        <!-- DIP at x=120, rope y=42 -->
+        <g transform="translate(120,42)" filter="url(#leafShadow)">
+          <!-- Left leaf: leans left, tip points down-left -->
+          <g transform="rotate(-28, 0, 0)">
+            <!-- leaf body: stem at (0,0), tip at (0,58) -->
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z"
+                  fill="url(#leafDark)"/>
+            <!-- highlight -->
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"
+                  fill="url(#leafLight)" opacity="0.55"/>
+            <!-- midrib -->
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+
+          <!-- Centre leaf: hangs straight down -->
+          <path d="M0,0 C-10,12 -13,32 -8,52 C-4,60 0,64 0,60 C0,64 4,60 8,52 C13,32 10,12 0,0Z"
+                fill="url(#leafDark)"/>
+          <path d="M0,0 C-3,12 -4,32 -1,52 C0,58 0,62 0,60 C0,62 0,58 1,52 C2,32 1,12 0,0Z"
+                fill="url(#leafLight)" opacity="0.55"/>
+          <line x1="0" y1="1" x2="0" y2="59" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+
+          <!-- Right leaf: leans right -->
+          <g transform="rotate(28, 0, 0)">
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z"
+                  fill="url(#leafDark)"/>
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"
+                  fill="url(#leafLight)" opacity="0.55"/>
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+        </g>
+
+        <!-- DIP at x=360 -->
+        <g transform="translate(360,42)" filter="url(#leafShadow)">
+          <g transform="rotate(-28, 0, 0)">
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z" fill="url(#leafDark)"/>
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+          <path d="M0,0 C-10,12 -13,32 -8,52 C-4,60 0,64 0,60 C0,64 4,60 8,52 C13,32 10,12 0,0Z" fill="url(#leafDark)"/>
+          <path d="M0,0 C-3,12 -4,32 -1,52 C0,58 0,62 0,60 C0,62 0,58 1,52 C2,32 1,12 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+          <line x1="0" y1="1" x2="0" y2="59" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          <g transform="rotate(28, 0, 0)">
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z" fill="url(#leafDark)"/>
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+        </g>
+
+        <!-- DIP at x=600 -->
+        <g transform="translate(600,42)" filter="url(#leafShadow)">
+          <g transform="rotate(-28, 0, 0)">
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z" fill="url(#leafDark)"/>
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+          <path d="M0,0 C-10,12 -13,32 -8,52 C-4,60 0,64 0,60 C0,64 4,60 8,52 C13,32 10,12 0,0Z" fill="url(#leafDark)"/>
+          <path d="M0,0 C-3,12 -4,32 -1,52 C0,58 0,62 0,60 C0,62 0,58 1,52 C2,32 1,12 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+          <line x1="0" y1="1" x2="0" y2="59" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          <g transform="rotate(28, 0, 0)">
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z" fill="url(#leafDark)"/>
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+        </g>
+
+        <!-- DIP at x=840 -->
+        <g transform="translate(840,42)" filter="url(#leafShadow)">
+          <g transform="rotate(-28, 0, 0)">
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z" fill="url(#leafDark)"/>
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+          <path d="M0,0 C-10,12 -13,32 -8,52 C-4,60 0,64 0,60 C0,64 4,60 8,52 C13,32 10,12 0,0Z" fill="url(#leafDark)"/>
+          <path d="M0,0 C-3,12 -4,32 -1,52 C0,58 0,62 0,60 C0,62 0,58 1,52 C2,32 1,12 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+          <line x1="0" y1="1" x2="0" y2="59" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          <g transform="rotate(28, 0, 0)">
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z" fill="url(#leafDark)"/>
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+        </g>
+
+        <!-- DIP at x=1080 -->
+        <g transform="translate(1080,42)" filter="url(#leafShadow)">
+          <g transform="rotate(-28, 0, 0)">
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z" fill="url(#leafDark)"/>
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+          <path d="M0,0 C-10,12 -13,32 -8,52 C-4,60 0,64 0,60 C0,64 4,60 8,52 C13,32 10,12 0,0Z" fill="url(#leafDark)"/>
+          <path d="M0,0 C-3,12 -4,32 -1,52 C0,58 0,62 0,60 C0,62 0,58 1,52 C2,32 1,12 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+          <line x1="0" y1="1" x2="0" y2="59" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          <g transform="rotate(28, 0, 0)">
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z" fill="url(#leafDark)"/>
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+        </g>
+
+        <!-- DIP at x=1320 -->
+        <g transform="translate(1320,42)" filter="url(#leafShadow)">
+          <g transform="rotate(-28, 0, 0)">
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z" fill="url(#leafDark)"/>
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+          <path d="M0,0 C-10,12 -13,32 -8,52 C-4,60 0,64 0,60 C0,64 4,60 8,52 C13,32 10,12 0,0Z" fill="url(#leafDark)"/>
+          <path d="M0,0 C-3,12 -4,32 -1,52 C0,58 0,62 0,60 C0,62 0,58 1,52 C2,32 1,12 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+          <line x1="0" y1="1" x2="0" y2="59" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          <g transform="rotate(28, 0, 0)">
+            <path d="M0,0 C-12,10 -16,30 -10,50 C-6,58 0,62 0,58 C0,62 6,58 10,50 C16,30 12,10 0,0Z" fill="url(#leafDark)"/>
+            <path d="M0,0 C-4,10 -6,30 -2,50 C-1,56 0,60 0,58 C0,60 1,56 2,50 C4,30 2,10 0,0Z"     fill="url(#leafLight)" opacity="0.55"/>
+            <line x1="0" y1="1" x2="0" y2="57" stroke="#1e4a1a" stroke-width="1" opacity="0.6"/>
+          </g>
+        </g>
+
+        <!--
+          ═══════════════════════════════════════════
+          MARIGOLD FLOWERS — at each PEAK of the rope
+          (x = 0, 240, 480, 720, 960, 1200, 1440  y=22)
+
+          Each flower: 16 petals in full 360° using
+          <ellipse> rotated every 22.5°, two rings
+          (outer pale, inner golden), plus centre disc.
+          The group is centred at the rope peak point.
+          ═══════════════════════════════════════════
+        -->
+
+        <!-- Flower macro — a full 360° marigold -->
+        <!-- Outer ring: 8 petals every 45° -->
+        <!-- Inner ring: 8 petals every 45°, rotated 22.5° -->
+
+        <!-- x=0 (left edge) -->
+        <g transform="translate(0,22)" filter="url(#flowerShadow)">
+          <!-- outer petals -->
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(315)"/>
+          <!-- inner petals -->
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(22.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(67.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(112.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(157.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(202.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(247.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(292.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(337.5)"/>
+          <!-- centre -->
+          <circle cx="0" cy="0" r="7"  fill="url(#petalCenter)"/>
+          <circle cx="0" cy="0" r="3.5" fill="#6a1800"/>
+        </g>
+
+        <!-- x=240 -->
+        <g transform="translate(240,22)" filter="url(#flowerShadow)">
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(315)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(22.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(67.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(112.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(157.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(202.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(247.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(292.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(337.5)"/>
+          <circle cx="0" cy="0" r="7"   fill="url(#petalCenter)"/>
+          <circle cx="0" cy="0" r="3.5" fill="#6a1800"/>
+        </g>
+
+        <!-- x=480 -->
+        <g transform="translate(480,22)" filter="url(#flowerShadow)">
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(315)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(22.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(67.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(112.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(157.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(202.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(247.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(292.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(337.5)"/>
+          <circle cx="0" cy="0" r="7"   fill="url(#petalCenter)"/>
+          <circle cx="0" cy="0" r="3.5" fill="#6a1800"/>
+        </g>
+
+        <!-- x=720 — centre flower, slightly larger -->
+        <g transform="translate(720,22)" filter="url(#flowerShadow)">
+          <ellipse cx="0" cy="-16" rx="6.5" ry="12" fill="url(#petalOuter)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-16" rx="6.5" ry="12" fill="url(#petalOuter)" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-16" rx="6.5" ry="12" fill="url(#petalOuter)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-16" rx="6.5" ry="12" fill="url(#petalOuter)" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-16" rx="6.5" ry="12" fill="url(#petalOuter)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-16" rx="6.5" ry="12" fill="url(#petalOuter)" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-16" rx="6.5" ry="12" fill="url(#petalOuter)" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-16" rx="6.5" ry="12" fill="url(#petalOuter)" transform="rotate(315)"/>
+          <ellipse cx="0" cy="-12" rx="5.5" ry="9"  fill="url(#petalInner)" transform="rotate(22.5)"/>
+          <ellipse cx="0" cy="-12" rx="5.5" ry="9"  fill="url(#petalInner)" transform="rotate(67.5)"/>
+          <ellipse cx="0" cy="-12" rx="5.5" ry="9"  fill="url(#petalInner)" transform="rotate(112.5)"/>
+          <ellipse cx="0" cy="-12" rx="5.5" ry="9"  fill="url(#petalInner)" transform="rotate(157.5)"/>
+          <ellipse cx="0" cy="-12" rx="5.5" ry="9"  fill="url(#petalInner)" transform="rotate(202.5)"/>
+          <ellipse cx="0" cy="-12" rx="5.5" ry="9"  fill="url(#petalInner)" transform="rotate(247.5)"/>
+          <ellipse cx="0" cy="-12" rx="5.5" ry="9"  fill="url(#petalInner)" transform="rotate(292.5)"/>
+          <ellipse cx="0" cy="-12" rx="5.5" ry="9"  fill="url(#petalInner)" transform="rotate(337.5)"/>
+          <circle cx="0" cy="0" r="9"   fill="url(#petalCenter)"/>
+          <circle cx="0" cy="0" r="4.5" fill="#6a1800"/>
+        </g>
+
+        <!-- x=960 -->
+        <g transform="translate(960,22)" filter="url(#flowerShadow)">
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(315)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(22.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(67.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(112.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(157.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(202.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(247.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(292.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(337.5)"/>
+          <circle cx="0" cy="0" r="7"   fill="url(#petalCenter)"/>
+          <circle cx="0" cy="0" r="3.5" fill="#6a1800"/>
+        </g>
+
+        <!-- x=1200 -->
+        <g transform="translate(1200,22)" filter="url(#flowerShadow)">
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(315)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(22.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(67.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(112.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(157.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(202.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(247.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(292.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(337.5)"/>
+          <circle cx="0" cy="0" r="7"   fill="url(#petalCenter)"/>
+          <circle cx="0" cy="0" r="3.5" fill="#6a1800"/>
+        </g>
+
+        <!-- x=1440 (right edge) -->
+        <g transform="translate(1440,22)" filter="url(#flowerShadow)">
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(0)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(45)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(90)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(135)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(180)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(225)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(270)"/>
+          <ellipse cx="0" cy="-13" rx="5.5" ry="10" fill="url(#petalOuter)" transform="rotate(315)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(22.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(67.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(112.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(157.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(202.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(247.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(292.5)"/>
+          <ellipse cx="0" cy="-10" rx="4.5" ry="8"  fill="url(#petalInner)" transform="rotate(337.5)"/>
+          <circle cx="0" cy="0" r="7"   fill="url(#petalCenter)"/>
+          <circle cx="0" cy="0" r="3.5" fill="#6a1800"/>
+        </g>
+
+      </svg>
+    </div>
+    <!-- END TORANA -->
+
+    <!-- Om -->
+    <div class="hero-om" aria-label="Om">ॐ</div>
+
+    <!-- Names -->
+    <div class="hero-names-block">
+      <div class="corner-ornament tl"></div>
+      <div class="corner-ornament tr"></div>
+      <div class="corner-ornament bl"></div>
+      <div class="corner-ornament br"></div>
+      <div class="hero-names-inner">
+        <span class="hero-bride-name">Shivani</span>
+        <span class="hero-weds">Weds</span>
+        <span class="hero-groom-name">Kishore</span>
+      </div>
+    </div>
+
+    <!-- Date -->
+    <div class="hero-date-line">
+      <div class="date-rule"></div>
+      <span class="hero-date-text">25th June 2025</span>
+      <div class="date-rule right"></div>
+    </div>
+
+    <div class="scroll-hint">
+      <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      scroll
+    </div>
+
+  </section>
+
+  <div class="marigold-border" aria-hidden="true"></div>
+
+  <!-- EVENTS -->
+  <section id="events">
+    <div class="section-inner">
+      <div class="section-title">
+        <h2>Celebrations & Venues</h2>
+        <div class="temple-divider">
+          <div class="line"></div>
+          <span class="ornament">✦ 🌿 ✦</span>
+          <div class="line"></div>
+        </div>
+        <p>Join us in every auspicious moment of this sacred journey</p>
+      </div>
+
+      <div class="events-grid">
+
+        <div class="event-card">
+          <div class="event-card-header">
+            <span class="event-icon">💍</span>
+            <h3>Engagement</h3>
+            <div class="event-date">17th June 2025 &nbsp;·&nbsp; 6:30 PM</div>
+          </div>
+          <div class="event-card-body">
+            <p>
+              <strong>Firewater Banquets</strong>
+              Allwyn X Roads, Hafeezpet Rd,<br/>
+              beside More Supermarket,<br/>
+              Miyapur, Telangana 500049
+            </p>
+            <a class="map-btn" href="https://maps.app.goo.gl/bXKvyRoQ4L4kTnHo8" target="_blank" rel="noopener">
+              📍 &nbsp;Open in Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <div class="event-card-header">
+            <span class="event-icon">🎊</span>
+            <h3>Wedding Ceremony</h3>
+            <div class="event-date">25th June 2025 &nbsp;·&nbsp; Muhurtham 7:50 AM</div>
+          </div>
+          <div class="event-card-body">
+            <p>
+              <strong>Vaaraahi Banquets</strong>
+              Floor 1, NSL Centrum Mall,<br/>
+              Kukatpally, Hyderabad,<br/>
+              Telangana 500085
+            </p>
+            <a class="map-btn" href="https://maps.app.goo.gl/Y9WyTkizahq15zV59" target="_blank" rel="noopener">
+              📍 &nbsp;Open in Maps
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="marigold-border" aria-hidden="true"></div>
+
+  <!-- ITINERARY -->
+  <section id="itinerary">
+    <div class="section-inner">
+      <div class="section-title">
+        <h2>Wedding Itinerary</h2>
+        <div class="temple-divider">
+          <div class="line"></div>
+          <span class="ornament">✦ 🪔 ✦</span>
+          <div class="line"></div>
+        </div>
+        <p>A sacred schedule of every auspicious moment — so you never miss a beat</p>
+      </div>
+
+      <div class="itinerary-tabs">
+        <button class="tab-btn active" onclick="showTab('tab-engagement', this)">💍 Engagement &mdash; 17 Jun</button>
+        <button class="tab-btn"       onclick="showTab('tab-prep',        this)">🌿 Preparations &mdash; 24 Jun</button>
+        <button class="tab-btn"       onclick="showTab('tab-prewedding',  this)">🌙 Pre-Wedding &mdash; 24 Jun Eve</button>
+        <button class="tab-btn"       onclick="showTab('tab-wedding',     this)">🎊 Wedding Day &mdash; 25 Jun</button>
+      </div>
+
+      <!-- TAB 1 -->
+      <div id="tab-engagement" class="tab-panel active">
+        <div class="itinerary-day-label">
+          <div class="day-pill">🌼 &nbsp; Tuesday, 17th June 2025 — Engagement &nbsp; 🌼</div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">4:00 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🙏</span> Ganapathi Pooja</h4>
+              <p>Seeking the blessings of Lord Ganesha to begin all auspicious proceedings.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">5:00 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">📜</span> Writing Lagna Pathrika</h4>
+              <p>The sacred wedding invitation scroll is formally written and announced.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">6:30 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">💍</span> Engagement Ceremony</h4>
+              <p>The formal exchange of rings and blessings between Shivani &amp; Kishore.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">8:00 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🍽️</span> Engagement Dinner</h4>
+              <p>A celebratory feast for all guests following the engagement ceremony.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2 -->
+      <div id="tab-prep" class="tab-panel">
+        <div class="itinerary-day-label">
+          <div class="day-pill">🌿 &nbsp; Tuesday, 24th June 2025 — Wedding Preparations &nbsp; 🌿</div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">5:30 AM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🪔</span> Preparing Pellikoduku</h4>
+              <p>Rituals begin at the groom's home to prepare Kishore for the wedding ceremonies.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">6:00 AM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🙏</span> Snathakam</h4>
+              <p>The sacred ceremony marking the groom's transition from student to householder.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">8:00 AM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🍛</span> Snathakam Breakfast</h4>
+              <p>A traditional breakfast served following the Snathakam ceremony.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">Morning</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🌼</span> Preparing Pellikuthuru</h4>
+              <p>Rituals at the bride's home — Shivani is adorned with turmeric, flowers &amp; blessings.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">12:00 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🍽️</span> Snathakam Lunch</h4>
+              <p>A traditional lunch served for family and guests at the groom's residence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3 -->
+      <div id="tab-prewedding" class="tab-panel">
+        <div class="itinerary-day-label">
+          <div class="day-pill">🌙 &nbsp; Tuesday, 24th June 2025 — Pre-Wedding Evening &nbsp; 🌙</div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">6:00 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🌅</span> Yedurukollu</h4>
+              <p>The joyous welcoming of the groom's procession by the bride's family — a cherished Telugu tradition.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">7:00 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🪔</span> Vara Pooja</h4>
+              <p>Sacred prayers and rituals performed for the groom by the bride's family.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">8:00 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🍽️</span> Dinner</h4>
+              <p>A grand dinner bringing together both families on the eve of the wedding.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">9:00 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🎶</span> Mehendi / DJ Night</h4>
+              <p>Celebrate the night away — Mehendi for the ladies and dancing for everyone!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4 -->
+      <div id="tab-wedding" class="tab-panel">
+        <div class="itinerary-day-label">
+          <div class="day-pill">🎊 &nbsp; Wednesday, 25th June 2025 — The Wedding Day &nbsp; 🎊</div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">3:00 AM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🌸</span> Gowri Pooja</h4>
+              <p>Early morning prayers to Goddess Gowri for blessings upon the bride.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">3:00 AM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🙏</span> Groom Pooja</h4>
+              <p>Sacred rituals performed for the groom in preparation for the wedding.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">5:30 AM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🪔</span> Pre-Wedding Pooja</h4>
+              <p>Auspicious prayers and rituals conducted before the main ceremony begins.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">7:00 AM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">👰</span> Bride Entry</h4>
+              <p>Shivani makes her grand, beautiful entrance — the moment everyone has been waiting for.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot muhurtham"></div>
+            <div class="timeline-time">7:50 AM</div>
+            <div class="timeline-content muhurtham">
+              <h4>
+                <span class="t-icon">⭐</span>
+                Jeelakarra Bellam
+                <span class="muhurtham-badge">✦ Muhurtham</span>
+              </h4>
+              <p>The most sacred moment — cumin and jaggery are placed on each other's heads, sealing the union of Shivani &amp; Kishore forever.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">8:00 AM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🍛</span> Breakfast</h4>
+              <p>Traditional breakfast served for all guests following the Muhurtham.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">10:00 AM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🔥</span> Wedding Pooja</h4>
+              <p>Sacred fire rituals and Vedic chants performed around the holy Agni.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">12:00 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🎉</span> Wedding Events</h4>
+              <p>Talambralu, Saptapadi and other joyful traditional Telugu wedding ceremonies.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">1:00 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🍽️</span> Guests Lunch</h4>
+              <p>A grand traditional Telugu feast served on banana leaves for all guests.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">2:00 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🎊</span> Wedding Concludes</h4>
+              <p>The beautiful wedding ceremony comes to a joyful close.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-time">4:30 PM</div>
+            <div class="timeline-content">
+              <h4><span class="t-icon">🥹</span> Appaginthalu</h4>
+              <p>The heartfelt farewell — Shivani begins her beautiful new journey with Kishore.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="marigold-border" aria-hidden="true"></div>
+
+  <!-- LIVE STREAM -->
+  <section id="livestream">
+    <div class="section-inner">
+      <div class="section-title">
+        <h2>Watch the Muhurtham Live</h2>
+        <div class="temple-divider">
+          <div class="line"></div>
+          <span class="ornament">✦ 📺 ✦</span>
+          <div class="line"></div>
+        </div>
+        <p>Couldn't make it in person? Watch the sacred ceremony live from anywhere in the world</p>
+      </div>
+      <div class="stream-wrapper">
+        <div class="stream-badge">
+          <div class="stream-dot"></div>
+          Live during the Muhurtham
+        </div>
+        <div class="video-frame-outer">
+          <div class="video-frame-inner">
+            <div class="video-container">
+              <!--
+                Replace YOUR_YOUTUBE_VIDEO_ID with your actual YouTube Live stream ID
+              -->
+              <iframe
+                src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID?autoplay=0&rel=0"
+                title="Shivani Weds Kishore — Live Stream"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <p class="stream-note">
+          The stream will go live at the auspicious Muhurtham — 7:50 AM on 25th June 2025.<br/>
+          Please refresh this page if the stream has not started yet. 🙏
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="marigold-border" aria-hidden="true"></div>
+
+  <!-- PHOTOS -->
+  <section id="photos">
+    <div class="section-inner">
+      <div class="section-title">
+        <h2>Share Your Memories</h2>
+        <div class="temple-divider">
+          <div class="line"></div>
+          <span class="ornament">✦ 📸 ✦</span>
+          <div class="line"></div>
+        </div>
+        <p>Captured a beautiful moment? Add it to our shared wedding album</p>
+      </div>
+      <div class="photos-wrapper">
+        <div class="photos-card">
+          <span class="leaf-corner tl">🌿</span>
+          <span class="leaf-corner tr">🌿</span>
+          <span class="leaf-corner bl">🌿</span>
+          <span class="leaf-corner br">🌿</span>
+          <span class="photos-icon">🖼️</span>
+          <h3>Guest Photo Gallery</h3>
+          <p>
+            Every photo you take is a precious memory of this auspicious day.
+            Click below to open our shared album and add your beautiful captures —
+            let's build a treasure of memories together.
+          </p>
+          <a class="upload-btn" href="https://photos.app.goo.gl/d7K9D4GPn9tmiS1Z8" target="_blank" rel="noopener">
+            📤 &nbsp; Upload Your Photos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marigold-border" aria-hidden="true"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-om">ॐ</span>
+    <div class="footer-names">Shivani Weds Kishore</div>
+    <div class="footer-date">25th June 2025</div>
+    <span class="footer-ornament">✦ &nbsp; 🌼 &nbsp; ✦ &nbsp; 🌿 &nbsp; ✦ &nbsp; 🌼 &nbsp; ✦</span>
+    <p>Made with ❤️ &nbsp;·&nbsp; We can't wait to celebrate with you!</p>
+  </footer>
+
+  <script>
+
+    /* ── ITINERARY TABS ── */
+    function showTab(tabId, btn) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    /* ── FLOATING PETALS ── */
+    const PETALS   = ['🌼', '🌸', '🌺', '✿'];
+    const petalBox = document.getElementById('petals-container');
+
+    function spawnPetal() {
+      const el       = document.createElement('div');
+      el.className   = 'petal';
+      el.textContent = PETALS[Math.floor(Math.random() * PETALS.length)];
+      const dur      = 7 + Math.random() * 9;
+      const delay    = Math.random() * 4;
+      el.style.cssText = `
+        left:${Math.random() * 100}%;
+        top:-30px;
+        font-size:${0.7 + Math.random() * 0.9}rem;
+        animation-duration:${dur}s;
+        animation-delay:${delay}s;
+      `;
+      petalBox.appendChild(el);
+      setTimeout(() => el.remove(), (dur + delay) * 1000);
+    }
+
+    setInterval(spawnPetal, 700);
+
+  </script>
+
+</body>
+</html>
